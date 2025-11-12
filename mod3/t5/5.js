@@ -110,15 +110,12 @@ for (let pic of picArray) {
   const caption = document.createElement('caption');
   caption.innerText = pic.caption;
 
-  figure.appendChild(img);
-  figure.appendChild(caption);
+  figure.append(img, caption);
 
   const p = document.createElement('p');
   p.innerText = pic.description;
 
-  article.appendChild(h2);
-  article.appendChild(figure);
-  article.appendChild(p);
+  article.append(h2, figure, p);
 
   select.appendChild(article);
 }
