@@ -99,7 +99,7 @@ for (let pic of picArray) {
   article.classList.add('card');
 
   const h2 = document.createElement('h2');
-  h2.textContent = pic.title;
+  h2.innerText = pic.title;
 
   const figure = document.createElement('figure');
 
@@ -108,13 +108,13 @@ for (let pic of picArray) {
   img.alt = pic.title;
 
   const caption = document.createElement('caption');
-  caption.textContent = pic.caption;
+  caption.innerText = pic.caption;
 
   figure.appendChild(img);
   figure.appendChild(caption);
 
   const p = document.createElement('p');
-  p.textContent = pic.description;
+  p.innerText = pic.description;
 
   article.appendChild(h2);
   article.appendChild(figure);
